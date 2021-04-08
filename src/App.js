@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
@@ -9,6 +9,9 @@ import Projects from "./pages/Projects";
 
 
 function App() {
+  const [showProjects, setShowProjects] = useState([])
+
+
   return (
     <Router>
       <div>
